@@ -21,11 +21,7 @@ public class MainActivity extends Activity {
         TextView brands = (TextView) findViewById(R.id.brands);
         Spinner colour = (Spinner) findViewById(R.id.color);
         String beerType = String.valueOf(colour.getSelectedItem());
-        List<String> beerList =mBeerExpert.getBrands(beerType);
-        String beers= new String();
-        for (String beer:beerList){
-            beers+=beer+'\n';
-        }
+        String beers= mBeerExpert.getBrandsInString(beerType);
         brands.setText(beers);
     }
 }

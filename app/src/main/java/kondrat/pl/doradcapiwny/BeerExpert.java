@@ -17,4 +17,12 @@ public class BeerExpert {
         }
     return brands;
     }
+    String getBrandsInString(String colour){
+        List<String> brands= getBrands(colour);
+        String beers= new String();
+        for (String beer:brands){
+            beers+=beer+'\n';
+        }
+        return beers;
+    }
 }
