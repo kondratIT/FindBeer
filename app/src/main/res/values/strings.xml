@@ -4,8 +4,8 @@
     <string name="brands"></string>
     <string-array name="beer_colors">
         <item>jasne</item>
-        <item>bursztynowe</item>
-        <item>brązowe</item>
+        <item>pszeniczne</item>
         <item>ciemne</item>
+        <item>bursztynowe</item>
     </string-array>
 </resources>

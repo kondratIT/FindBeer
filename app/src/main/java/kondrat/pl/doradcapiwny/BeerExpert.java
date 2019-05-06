@@ -6,14 +6,25 @@ import java.util.List;
 public class BeerExpert {
     List<String> getBrands(String colour){
         List<String> brands = new ArrayList<String>();
-        if(colour.equals("bursztynowe")){
-            brands.add("Jack Amber");
-            brands.add("Black Moore");
-        }
-        else{
-            brands.add("Tyskie");
-            brands.add("Żubr");
-            brands.add("Warka");
+        switch(colour) {
+            case("pszeniczne") : {
+                brands.add("Żywiec Białe");
+                brands.add("Książęce Weizer");
+                brands.add("Książęce pszeniczne");
+                break;
+            }
+            case ("jasne"): {
+                brands.add("Tyskie");
+                brands.add("Żubr");
+                brands.add("Warka");
+                break;
+            }
+            case("ciemne"):{
+                brands.add("Porter");
+                break;
+            }
+            default:
+                brands.add("Inne piwo");
         }
     return brands;
     }
